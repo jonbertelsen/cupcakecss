@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cupcake</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="page-content">
+
+    <header>
+        <img src="images/cupcakelogo.png"/>
+    </header>
+
+    <div id="nav">
+        <ul id="primary-menu">
+            <li><a href="#">Ordrer</a></li>
+            <li>Kunder</li>
+        </ul>
+        <ul id="secondary-menu">
+            <li>jobe@cphbusiness.dk</li>
+            <li>Log ud</li>
+            <li>
+                <div id="basket-container">
+                    <div id="basket-icon"><img id="basket-image" src="images/shoppingbasket.png"/></div>
+                    <span id="basket-count">5</span></div>
+            </li>
+        </ul>
+    </div>
+    <div id="main-content">
+        <h1>Velkommen ombord</h1>
+        <h2>Øens bedste cupcakes. Vælg og bestil her:</h2>
+
+        <form id="dropdowns" action="cart.html" method="get">
+            <select name="bottom" id="bottom">
+                <option value="1">Chokolade (5 kr)</option>
+                <option value="2">Hindbær (6 kr)</option>
+            </select>
+            <select name="top" id="top">
+                <option value="1">Vanille (7 kr)</option>
+                <option value="2">Chokolade (6 kr)</option>
+            </select>
+            <select name="antal" id="antal">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+
+            <button type="submit">Læg i kurv</button>
+        </form>
+</div>
+</div>
+</body>
+</html>

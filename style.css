@@ -1,0 +1,155 @@
+html * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Tahoma, sans-serif;
+}
+
+#page-content {
+    max-width: 800px;
+}
+
+#main-content {
+    padding:10px;
+    margin-top: 30px;
+}
+
+/* Text styles */
+
+h1 {
+    font-size: 3.5rem;
+    margin-top: 0.67rem;
+    margin-bottom: 0.67rem;
+    font-family: Georgia, serif;
+}
+
+h2 {
+    font-size: 2.0rem;
+    margin-top: 1.0rem;
+    margin-bottom: 1.0rem;
+    font-family: Georgia, serif;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 1.0rem;
+    margin-bottom: 1.0rem;
+}
+
+
+/* Header */
+
+header {
+    background-color: #dfdfdf;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    max-width: 80%;
+}
+
+
+/* Nav-bar */
+
+#nav a:hover, #nav li:hover {
+    background-color: #ac5f2c;
+    color: white;
+}
+#nav li {
+    padding:10px;
+}
+
+#nav a {
+    text-decoration: none;
+    color: black;
+}
+
+#nav {
+    background-color: #dfdfdf;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+#primary-menu {
+    list-style: none;
+    display: flex;
+    column-gap: 2rem;
+}
+
+#secondary-menu {
+    list-style: none;
+    display: flex;
+    column-gap: 2rem;
+    justify-self: flex-end;
+}
+
+/* Flex styling af dropdowns */
+
+#dropdowns {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top:40px;
+}
+
+@media screen and (max-width: 800px) {
+    #dropdowns {
+        flex-direction: column;
+    }
+
+    #nav, #primary-menu, #secondary-menu {
+        flex-direction: column;
+        gap: 0px;
+        align-items: flex-start;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+#dropdowns select, #dropdowns button {
+    font-size: 1.5rem;
+    padding: 5px;
+    flex-grow: 1;
+}
+
+#basket-icon {
+    margin-right: 30px;
+    width:20px;
+    height:20px;
+}
+
+#basket-image {
+    width: 24px;
+    height: 24px;
+}
+
+#basket-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 12px;
+}
+
+#basket-container {
+    position: relative;
+    font-size: 24px;
+}
